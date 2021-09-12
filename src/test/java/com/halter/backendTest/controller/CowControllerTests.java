@@ -10,6 +10,7 @@ import com.halter.backendTest.models.requests.NewCowRequest;
 import com.halter.backendTest.repository.CowRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.mockito.InjectMocks;
 import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
@@ -27,7 +28,7 @@ public class CowControllerTests {
     private MockMvc mvc;
     @Autowired
     ObjectMapper mapper;
-    @MockBean
+    @InjectMocks
     private CowController cowController;
     @MockBean
     private CowRepository cowRepository;
