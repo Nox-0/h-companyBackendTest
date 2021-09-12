@@ -31,7 +31,7 @@ public class CowController {
     public ResponseEntity<String> createCow(@RequestBody NewCowRequest newCowRequest) throws JsonProcessingException {
         Cow newCow = new Cow(newCowRequest);
         cowRepository.save(newCow);
-        return ResponseEntity.status(HttpStatus.OK).body(mapper.writeValueAsString(newCow));
+        return ResponseEntity.status(HttpStatus.CREATED).body(mapper.writeValueAsString(newCow));
     }
 
     @PutMapping("/cows/{cowId}")
