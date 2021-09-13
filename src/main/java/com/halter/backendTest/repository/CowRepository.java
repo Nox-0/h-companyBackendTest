@@ -5,8 +5,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface CowRepository extends JpaRepository<Cow, Integer> {
 
-    public boolean existsById(int id);
-
     public Cow findById(int id);
 
 
