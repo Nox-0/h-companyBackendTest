@@ -1,4 +1,4 @@
-Hello, this is Danila Bublik's Backend Developer Test for Halter NZ
+Hello, this is Danila Bublik's Backend Developer Test for [h-company] NZ
 
 There are two easy ways to run the app.
 
